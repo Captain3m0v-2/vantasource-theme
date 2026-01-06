@@ -1,0 +1,37 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.env.local
+
+# WordPress specific
+wp-config.php
+wp-content/plugins/*
+wp-content/uploads/*
+wp-content/backup*
+.htaccess
+
+# Node modules (if using npm for development)
+node_modules/
+package-lock.json
+
+# Logs
+error_log
+*.log
+
+# Compiled CSS/JS (if using build tools)
+/dist/
+/build/
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
