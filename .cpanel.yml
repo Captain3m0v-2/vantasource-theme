@@ -1,4 +1,8 @@
 ---
 deployment:
   tasks:
-    - /bin/true
+    - export PATH=/bin:/usr/bin
+    - cd /home/vantasou/public_html/wp-content/themes/vantasource-theme
+    - git reset --hard origin/main
+    - find . -type f -exec chmod 644 {} \;
+    - find . -type d -exec chmod 755 {} \;
