@@ -1,20 +1,28 @@
 <?php get_header(); ?>
 
+
+
+<!-- ================================
+    HERO SECTION
+====================================-->
 <header class="hero-wave-section">
     <div class="container hero-content">
         <div class="row">
             <div class="col-lg-8" data-aos="fade-up">
+                <!-- Hero Title -->
                 <h1 class="hero-title">
                     Together we make <br>
                     international trade <br>
                     run faster.
                 </h1>
                 
-               <p class="hero-subtitle" style="color: white;">
-    We bridge the gap between ambitious brands and world-class manufacturing. 
-    Get direct factory access, total quality control, and seamless global logistics.
+                <!-- Hero Subtitle -->
+                <p class="hero-subtitle" style="color: white;">
+                    We bridge the gap between ambitious brands and world-class manufacturing. 
+                    Get direct factory access, total quality control, and seamless global logistics.
                 </p>
                 
+                <!-- Call-to-Action Buttons -->
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="<?php echo home_url('/quote'); ?>" class="btn btn-primary rounded-pill border-0">
                         <i class="bi bi-file-earmark-text me-2"></i>Get a Quote
@@ -27,6 +35,7 @@
         </div>
     </div>
 
+    <!-- Custom Shape Divider (Bottom) -->
     <div class="custom-shape-divider-bottom">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z" class="shape-fill"></path>
@@ -34,21 +43,28 @@
     </div>
 </header>
 
+<!-- ================================
+    TRUST STATS SECTION
+====================================-->
 <section class="py-5 bg-white border-bottom position-relative z-1">
     <div class="container">
         <div class="row text-center align-items-center gx-5">
+            <!-- Trust Stat 1: Verified Factories -->
             <div class="col-6 col-md-3 mb-4 mb-md-0 border-end-md" data-aos="fade-up">
                 <div class="trust-stat-number">500+</div> 
                 <div class="trust-stat-label">Verified Factories</div>
             </div>
+            <!-- Trust Stat 2: Global Regions -->
             <div class="col-6 col-md-3 mb-4 mb-md-0 border-end-md" data-aos="fade-up" data-aos-delay="100">
                 <div class="trust-stat-number">12+</div> 
                 <div class="trust-stat-label">Global Regions</div>
             </div>
+            <!-- Trust Stat 3: QC Pass Rate -->
             <div class="col-6 col-md-3 border-end-md" data-aos="fade-up" data-aos-delay="200">
                 <div class="trust-stat-number">99.8%</div> 
                 <div class="trust-stat-label">QC Pass Rate</div>
             </div>
+            <!-- Trust Stat 4: Multilingual Support -->
             <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="trust-stat-number">24/7</div> 
                 <div class="trust-stat-label">Multilingual Support</div>
@@ -57,14 +73,19 @@
     </div>
 </section>
 
+<!-- ================================
+    SERVICES SECTION
+====================================-->
 <section id="services" class="py-5 bg-light">
     <div class="container py-5">
         <div class="text-center mb-5">
+            <!-- Services Title -->
             <h6 class="text-primary fw-bold text-uppercase ls-2">Expertise</h6>
             <h2 class="display-5 fw-bold text-dark">Our Core Services</h2>
             <p class="text-muted mt-3">Complete solutions for your global sourcing needs</p>
         </div>
         <div class="row g-4">
+            <!-- Service 1: Global Logistics -->
             <div class="col-md-4" data-aos="fade-up">
                 <div class="feature-card h-100">
                     <div class="feature-card-icon">
@@ -74,6 +95,7 @@
                     <p class="text-muted">End-to-end management from factory to your warehouse with full tracking and transparency.</p>
                 </div>
             </div>
+            <!-- Service 2: Quality Control -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-card h-100">
                     <div class="feature-card-icon">
@@ -83,6 +105,7 @@
                     <p class="text-muted">Rigorous on-site inspections and testing to ensure zero defects and maximum quality.</p>
                 </div>
             </div>
+            <!-- Service 3: Product Sourcing -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-card h-100">
                     <div class="feature-card-icon">
@@ -93,20 +116,26 @@
                 </div>
             </div>
         </div>
+        <!-- View All Services Button -->
         <div class="text-center mt-5">
             <a href="<?php echo home_url('/services'); ?>" class="btn btn-primary rounded-pill">View All Services</a>
         </div>
     </div>
 </section>
 
+<!-- ================================
+    WHY CHOOSE US SECTION
+====================================-->
 <section class="py-5 bg-white">
     <div class="container py-5">
         <div class="text-center mb-5">
+            <!-- Why Choose Us Title -->
             <h6 class="text-primary fw-bold text-uppercase ls-2">Why Choose Us</h6>
             <h2 class="display-5 fw-bold text-dark">What Sets Us Apart</h2>
         </div>
         
         <div class="row g-4">
+            <!-- Reason 1: Expertise -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up">
                 <div class="feature-card text-center h-100">
                     <div class="feature-card-icon mx-auto">
@@ -116,7 +145,7 @@
                     <p class="text-muted small">10+ years of international sourcing experience</p>
                 </div>
             </div>
-            
+            <!-- Reason 2: Team -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-card text-center h-100">
                     <div class="feature-card-icon mx-auto">
@@ -126,7 +155,7 @@
                     <p class="text-muted small">Dedicated experts fluent in 6+ languages</p>
                 </div>
             </div>
-            
+            <!-- Reason 3: Protection -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-card text-center h-100">
                     <div class="feature-card-icon mx-auto">
@@ -136,7 +165,7 @@
                     <p class="text-muted small">Secure escrow payments and factory audits</p>
                 </div>
             </div>
-            
+            <!-- Reason 4: Support -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="feature-card text-center h-100">
                     <div class="feature-card-icon mx-auto">
@@ -150,9 +179,13 @@
     </div>
 </section>
 
+<!-- ================================
+    WORKING PROCESS TIMELINE SECTION
+====================================-->
 <section class="py-5" style="background-color: #f8fafc;">
     <div class="container py-5">
         <div class="text-center mb-5">
+            <!-- Process Title -->
             <h6 class="text-primary fw-bold text-uppercase ls-2">Process</h6>
             <h2 class="display-5 fw-bold text-dark">How We Work</h2>
         </div>
@@ -160,26 +193,27 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="timeline">
+                    <!-- Timeline Item 1: Submit Requirements -->
                     <div class="timeline-item" data-aos="fade-up">
                         <h5 class="timeline-title">1. Submit Your Requirements</h5>
                         <p class="timeline-description">Tell us about your product, quantity, budget, and timeline. We ask detailed questions to understand your needs.</p>
                     </div>
-                    
+                    <!-- Timeline Item 2: Find Best Suppliers -->
                     <div class="timeline-item" data-aos="fade-up">
                         <h5 class="timeline-title">2. Find Best Suppliers</h5>
                         <p class="timeline-description">Our team identifies 2-3 best-fit manufacturers from our verified network that match your specifications.</p>
                     </div>
-                    
+                    <!-- Timeline Item 3: Get Quotations -->
                     <div class="timeline-item" data-aos="fade-up">
                         <h5 class="timeline-title">3. Get Quotations</h5>
                         <p class="timeline-description">Receive detailed pricing, MOQ information, and delivery terms from multiple verified suppliers.</p>
                     </div>
-                    
+                    <!-- Timeline Item 4: Quality Assurance -->
                     <div class="timeline-item" data-aos="fade-up">
                         <h5 class="timeline-title">4. Quality Assurance</h5>
                         <p class="timeline-description">We conduct factory audits, prototype reviews, and on-site inspections throughout production.</p>
                     </div>
-                    
+                    <!-- Timeline Item 5: Complete Delivery -->
                     <div class="timeline-item" data-aos="fade-up">
                         <h5 class="timeline-title">5. Complete Delivery</h5>
                         <p class="timeline-description">Seamless logistics management with full tracking from factory to your doorstep worldwide.</p>
@@ -190,6 +224,9 @@
     </div>
 </section>
 
+<!-- ================================
+    CONTACT SECTION
+====================================-->
 <section id="contact" class="py-5 bg-white">
     <div class="container py-5">
         <div class="cta-section">
@@ -201,5 +238,6 @@
         </div>
     </div>
 </section>
+
 
 <?php get_footer(); ?>

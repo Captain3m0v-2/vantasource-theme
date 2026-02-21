@@ -19,7 +19,7 @@ body {
     color: #334155;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 76px; /* Space for fixed navbar */
+    padding-top: 86px; /* Space for fixed navbar (corporate header) */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,58 +33,57 @@ a {
 }
 
 /* =========================================
-   2. NAVBAR & LANGUAGE DROPDOWN FIXES
+   2. NAVBAR (CORPORATE WHITE) + DROPDOWNS
    ========================================= */
+
 .navbar {
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: #ffffff !important;
     transition: all 0.3s ease;
-    padding: 15px 0;
+    padding: 16px 0;
     z-index: 1030;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    backdrop-filter: none !important; /* remove glass */
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #ffffff !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Brand */
 .navbar-brand {
-    font-size: 1.8rem !important;
-    color: white !important;
+    font-size: 1.65rem !important;
+    color: #0f172a !important;
 }
 
+/* Nav links */
 .nav-link {
     font-weight: 500;
     padding: 8px 16px !important;
     border-radius: 6px;
+    color: #0f172a !important;
 }
 
 .nav-link:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(59, 130, 246, 0.08);
+    color: #3b82f6 !important;
 }
 
-/* Language Dropdown Button */
-.nav-link.dropdown-toggle {
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 8px 20px !important;
-    transition: all 0.3s ease;
+/* Services dropdown toggle should not look like a "language button" */
+.navbar .nav-link.dropdown-toggle {
+    border: none;
 }
 
-.nav-link.dropdown-toggle:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Dropdown Menu */
+/* Dropdown menu */
 .dropdown-menu {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(15px);
+    background: #ffffff !important;
     border-radius: 12px !important;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
     padding: 10px 0;
-    min-width: 200px;
+    min-width: 220px;
     animation: fadeIn 0.2s ease-out;
     margin-top: 10px !important;
 }
@@ -100,15 +99,15 @@ a {
     }
 }
 
-/* Dropdown Items */
+/* Dropdown items */
 .dropdown-item {
-    padding: 12px 20px !important;
+    padding: 12px 18px !important;
     margin: 4px 8px;
-    border-radius: 8px;
+    border-radius: 10px;
     border-left: 4px solid transparent;
     font-weight: 500;
-    color: #333;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #0f172a;
+    transition: all 0.25s ease;
     display: flex;
     align-items: center;
     width: calc(100% - 16px);
@@ -116,11 +115,11 @@ a {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
-    color: white !important;
-    transform: translateX(8px);
-    border-left-color: #60a5fa;
-    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+    background: rgba(59, 130, 246, 0.10) !important;
+    color: #0f172a !important;
+    transform: translateX(4px);
+    border-left-color: #3b82f6;
+    box-shadow: none;
 }
 
 /* Flag Icons */
@@ -129,26 +128,27 @@ a {
     min-width: 24px;
 }
 
-/* Active Language */
+/* Active dropdown item */
 .dropdown-item.active {
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
-    color: white !important;
+    background: rgba(59, 130, 246, 0.12) !important;
+    color: #0f172a !important;
 }
 
-/* Mobile Responsive */
+/* Mobile menu */
 @media (max-width: 991px) {
     .navbar-collapse {
-        background: rgba(0, 0, 0, 0.95);
-        padding: 20px;
-        border-radius: 12px;
-        margin-top: 15px;
+        background: #ffffff;
+        padding: 16px;
+        border-radius: 14px;
+        margin-top: 12px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+        border: 1px solid rgba(15, 23, 42, 0.08);
     }
-    
+
     .dropdown-menu {
-        background: rgba(255, 255, 255, 0.95);
-        margin: 10px 0;
+        margin: 6px 0 !important;
     }
-    
+
     .nav-link.dropdown-toggle {
         justify-content: center;
         width: 100%;
@@ -166,7 +166,7 @@ a {
     padding-top: 60px;
     display: flex;
     align-items: center;
-    background: 
+    background:
         linear-gradient(120deg, rgba(12, 35, 120, 0.92) 0%, rgba(30, 80, 220, 0.85) 100%),
         url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
@@ -298,19 +298,19 @@ a {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-wave-section {
         min-height: 80vh;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .trust-stat-number {
         font-size: 2rem;
     }
-    
+
     .btn-primary,
     .btn-outline-light {
         padding: 12px 30px;
@@ -318,7 +318,7 @@ a {
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .custom-shape-divider-bottom svg {
         height: 80px;
     }
@@ -328,7 +328,7 @@ a {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .navbar-brand {
         font-size: 1.5rem !important;
     }
@@ -745,17 +745,61 @@ textarea.form-control {
 }
 
 /* =========================================
+   FLOATING CONTACT BUTTON
+========================================= */
+.floating-contact-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.floating-contact-btn:hover {
+    background: #2563eb;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.floating-contact-btn i {
+    font-size: 1.2rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 576px) {
+    .floating-contact-btn span {
+        display: none;
+    }
+
+    .floating-contact-btn {
+        padding: 16px;
+        border-radius: 50%;
+    }
+}
+
+/* =========================================
    21. RESPONSIVE IMPROVEMENTS
    ========================================= */
 @media (max-width: 768px) {
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .cta-title {
         font-size: 1.8rem;
     }
-    
+
     .pricing-card.featured {
         transform: scale(1);
     }
@@ -765,19 +809,19 @@ textarea.form-control {
     .hero-wave-section {
         min-height: 70vh;
     }
-    
+
     .section-space {
         padding: 3rem 0;
     }
-    
+
     .timeline::before {
         left: 5px;
     }
-    
+
     .timeline-item {
         margin-left: 2.5rem;
     }
-    
+
     .timeline-item::before {
         left: -2.5rem;
     }

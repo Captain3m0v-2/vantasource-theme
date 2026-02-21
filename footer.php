@@ -7,6 +7,10 @@
                     <i class="bi bi-box-seam me-2" style="color: #667eea;"></i>VANTASOURCE
                 </h5>
                 <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">Your trusted partner in global product sourcing, quality control, and international logistics.</p>
+                <p class="mb-2" style="color: #cbd5e1; font-size: 0.95rem;">
+                    <i class="bi bi-whatsapp me-2" style="color:#22c55e;"></i><a class="text-decoration-none" style="color:#cbd5e1;" href="https://wa.me/8801831555639">WhatsApp +8801831555639</a><br>
+                    <i class="bi bi-chat-dots me-2" style="color:#38bdf8;"></i>WeChat: +8801831555639
+                </p>
                 <div class="social-links">
                     <a href="https://linkedin.com" target="_blank" class="text-decoration-none me-3" style="color: #94a3b8; transition: color 0.3s;">
                         <i class="bi bi-linkedin"></i>
@@ -82,6 +86,15 @@
             </div>
         </div>
     </div>
+    <!-- ================================
+     FLOATING CONTACT BUTTON
+==================================== -->
+<a href="https://wa.me/8801831555639" 
+   class="floating-contact-btn">
+    <i class="bi bi-whatsapp"></i>
+    <span>WhatsApp</span>
+</a>
+
 </footer>
 
 <?php wp_footer(); ?> </body>
